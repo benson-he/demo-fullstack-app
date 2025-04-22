@@ -3,8 +3,8 @@ pipeline {
         label 'tyy-221' // 指定在远程节点 tyy-221 上运行
     }
     tools {
-        maven ''apache-maven-3.9.1 // 使用在 Global Tool Configuration 中配置的 Maven
-        nodejs ''node-23-10 // 使用在 Global Tool Configuration 中配置的 NodeJS
+        maven 'Local-Maven-3.9.1' // 使用在 Global Tool Configuration 中配置的 Maven
+        nodejs 'node-23-10' // 使用在 Global Tool Configuration 中配置的 NodeJS
     }
     stages {
         stage('Checkout') {
