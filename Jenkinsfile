@@ -3,7 +3,9 @@ pipeline {
         label 'aliyun-89' // 指定在远程节点 aliyun-89 上运行
     }
     tools {
-        maven 'Local-Maven-3.9.1' // 使用在 Global Tool Configuration 中配置的 Maven
+        maven 'Maven-3.9.9' // 指定使用自动安装的 Maven
+        jdk 'JDK-17' // 确保使用 JDK 17
+        // maven 'Local-Maven-3.9.1' // 使用在 Global Tool Configuration 中配置的 Maven
         nodejs 'node-23-10' // 使用在 Global Tool Configuration 中配置的 NodeJS
     }
     stages {
