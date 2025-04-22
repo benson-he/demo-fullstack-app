@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'tyy-221' // 指定在远程节点 tyy-221 上运行
+        label 'aliyun-89' // 指定在远程节点 aliyun-89 上运行
     }
     tools {
         maven 'Local-Maven-3.9.1' // 使用在 Global Tool Configuration 中配置的 Maven
